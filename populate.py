@@ -8,10 +8,10 @@ def populate_fake_traffic():
     Inserts multiple 'fake' IP/payload pairs into the database.
     Some are malicious, some are safe.
     """
-    # Make sure the database is set up
+    
     initialize_database()
 
-    # List of (fake_ip, payload) pairs
+   
     fake_packets = [
         ("FAKE_IP_1", "safe_data"),
         ("FAKE_IP_2", "malicious_payload_1"),
@@ -25,7 +25,7 @@ def populate_fake_traffic():
         ("FAKE_IP_10", "nothing_to_see_here"),
     ]
 
-    # Process each "packet"
+    
     for (fake_ip, payload) in fake_packets:
         process_packet(fake_ip, payload)
 
