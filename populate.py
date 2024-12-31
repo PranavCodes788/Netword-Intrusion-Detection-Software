@@ -1,17 +1,18 @@
 # populate.py
 
+#Populates the SQLite database with fake logs for testing purposes.
+
 from src.main import process_packet
 from src.log_handler import initialize_database
 
 def populate_fake_traffic():
-    """
-    Inserts multiple 'fake' IP/payload pairs into the database.
-    Some are malicious, some are safe.
-    """
+    
+  # Inserts sample logs into the database for testing the dashboard.
     
     initialize_database()
 
-   
+    # Insert fake data
+    
     fake_packets = [
         ("FAKE_IP_1", "safe_data"),
         ("FAKE_IP_2", "malicious_payload_1"),
