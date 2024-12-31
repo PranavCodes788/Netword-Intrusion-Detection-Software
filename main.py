@@ -15,7 +15,6 @@ def process_packet(fake_ip, payload):
         print(f"✅ Safe. IP: {fake_ip}, Payload: {payload}")
 
 if __name__ == "__main__":
-    # If you want to run something here, you can.
-    # Typically, we'll run the 'populate.py' or 'dashboard.py' instead.
+   
     initialize_database()
     print("main.py executed. Database ready.")
