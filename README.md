@@ -21,3 +21,7 @@ A Python-based project for monitoring network traffic, detecting intrusions, and
 2. A virtual environment (optional but recommended).
 3. Admin/root permissions (required to capture live packets).
 
+
+
+![Uploading Screenshot 2024-12-30 at 8.59.41 PM.png…]()
+
