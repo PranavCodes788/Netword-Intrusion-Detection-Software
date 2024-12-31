@@ -23,4 +23,7 @@ A Python-based project for monitoring network traffic, detecting intrusions, and
 
 
 
+## Code Results 
+
+
 <img width="1507" alt="Screenshot 2024-12-30 at 8 59 41 PM" src="https://github.com/user-attachments/assets/98c4ada7-ae7e-4cf0-adfa-f17d89b0fa07" />
