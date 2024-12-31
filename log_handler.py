@@ -1,24 +1,25 @@
 # log_handler.py
 
+#Manages logging and database operations for captured packets.
+
 import sqlite3
 
 def initialize_database():
-    """
-    Create a database (nids_logs.db) with a table named 'logs'
-    if it doesn't already exist.
-    """
+    #Creates the SQLite database and the 'logs' table for storing packet information.
     conn = sqlite3.connect("../nids_logs.db")
     cursor = conn.cursor()
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS logs (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            fake_ip TEXT,
-            payload TEXT,
-            status TEXT
-        )
-    """)
+    cursor.execute(
+        
+        #CREATE TABLE IF NOT EXISTS logs (
+           # id INTEGER PRIMARY KEY AUTOINCREMENT,
+          #  fake_ip TEXT,
+           # payload TEXT,
+           # status TEXT
+        #)
+    #)
     conn.commit()
     conn.close()
+#Logs the analyzed packet and its status into the SQLite database.
 
 def log_entry(fake_ip, payload, status):
     """
