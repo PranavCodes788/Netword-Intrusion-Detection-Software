@@ -23,5 +23,3 @@ A Python-based project for monitoring network traffic, detecting intrusions, and
 
 
 
-![Uploading Screenshot 2024-12-30 at 8.59.41 PM.png…]()
-
