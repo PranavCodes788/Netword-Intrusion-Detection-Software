@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake NIDS Logs</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 1rem auto;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fake Network Intrusion Detection System Logs</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Fake IP</th>
+            <th>Payload</th>
+            <th>Status</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log[0] }}</td>
+            <td>{{ log[1] }}</td>
+            <td>{{ log[2] }}</td>
+            <td>{{ log[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
